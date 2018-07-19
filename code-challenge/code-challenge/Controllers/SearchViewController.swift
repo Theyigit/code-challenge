@@ -10,29 +10,27 @@ import Foundation
 import UIKit
 
 class SearchViewController: UIViewController {
+
+    let venueDataSource = VenueDataSource()
     
     @IBOutlet var searchTextField: UITextField!
 
     @IBAction func search(_ sender: Any) {
 
         if (searchTextField.text?.isEmpty)! {
-            makeRequestToApi(address: "istanbul")
+            makeRequestToAPI(address: "istanbul")
         } else {
-            makeRequestToApi(address: searchTextField.text!)
+            makeRequestToAPI(address: searchTextField.text!)
         }
 
     }
 
-    private func makeRequestToApi(address: String) {
+    private func makeRequestToAPI(address: String) {
 
-        FoursquareNetwork.request(target: .search(city: address), success: { (JSON) in
+        venueDataSource.loadData(forCityName: address, successCallback: {
 
-        }, error: { (errorString, statusCode) in
-            print("\(errorString) - \(statusCode)")
-            //errorCallback(errorString)
-        }) { (error) in
-            print(error.localizedDescription)
-            //errorCallback(error.localizedDescription)
+        }) { (errorString) in
+            print(errorString)
         }
 
     }

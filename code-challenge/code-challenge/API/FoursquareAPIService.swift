@@ -9,7 +9,7 @@
 import Moya
 
 enum FourSquareAPIService {
-    case search(city: String?)
+    case search(city: String)
 }
 
 extension FourSquareAPIService: TargetType {
@@ -44,13 +44,12 @@ extension FourSquareAPIService: TargetType {
             return [
                 "client_id": "C0RPQHVQIANMTPWBWDYNJFHO1SYEQDZ55H2IYSINQOCUSIRQ",
                 "client_secret": "GAPU3A1L1IROOOW2E4VVSYDMJZZWARB1MDLX3D5QKA0EGRLO",
-                "near": city ?? "İstanbul",
+                "near": city,
                 "query": "coffee",
                 "v": "20180719"
             ]
         }
     }
-
 
     var headers: [String : String]? {
         return nil
