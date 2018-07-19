@@ -14,6 +14,8 @@
 		34340F422100982C0091E0E2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34340F412100982C0091E0E2 /* SearchViewController.swift */; };
 		34340F44210099130091E0E2 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34340F43210099130091E0E2 /* SearchButton.swift */; };
 		34340F4621009B550091E0E2 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34340F4521009B550091E0E2 /* SearchTextField.swift */; };
+		345564D12100B073009E518E /* FoursquareAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345564D02100B073009E518E /* FoursquareAPIService.swift */; };
+		346512DC2100B3210068DC0D /* FoursquareNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346512DB2100B3210068DC0D /* FoursquareNetwork.swift */; };
 		D4147FE8712C9A8BE0785B02 /* Pods_code_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB59107EE55FC3DC3018A3D /* Pods_code_challenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		34340F412100982C0091E0E2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		34340F43210099130091E0E2 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		34340F4521009B550091E0E2 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		345564D02100B073009E518E /* FoursquareAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIService.swift; sourceTree = "<group>"; };
+		346512DB2100B3210068DC0D /* FoursquareNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareNetwork.swift; sourceTree = "<group>"; };
 		4F1A8055C192E34D64F8CFDD /* Pods-code-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-code-challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-code-challenge/Pods-code-challenge.release.xcconfig"; sourceTree = "<group>"; };
 		69A209161EFD32A4484E1C03 /* Pods-code-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-code-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-code-challenge/Pods-code-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		7DB59107EE55FC3DC3018A3D /* Pods_code_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_code_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +118,8 @@
 		34340F3F210094C20091E0E2 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				345564D02100B073009E518E /* FoursquareAPIService.swift */,
+				346512DB2100B3210068DC0D /* FoursquareNetwork.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -240,12 +246,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345564D12100B073009E518E /* FoursquareAPIService.swift in Sources */,
+				346512DC2100B3210068DC0D /* FoursquareNetwork.swift in Sources */,
 				34340F422100982C0091E0E2 /* SearchViewController.swift in Sources */,
 				34340F2A2100944B0091E0E2 /* AppDelegate.swift in Sources */,
 				34340F44210099130091E0E2 /* SearchButton.swift in Sources */,
