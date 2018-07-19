@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		34340F2A2100944B0091E0E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34340F292100944B0091E0E2 /* AppDelegate.swift */; };
-		34340F2C2100944B0091E0E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34340F2B2100944B0091E0E2 /* ViewController.swift */; };
 		34340F2F2100944B0091E0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34340F2D2100944B0091E0E2 /* Main.storyboard */; };
 		34340F312100944B0091E0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34340F302100944B0091E0E2 /* Assets.xcassets */; };
 		34340F342100944B0091E0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34340F322100944B0091E0E2 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		34340F262100944B0091E0E2 /* code-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "code-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34340F292100944B0091E0E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34340F2B2100944B0091E0E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34340F2E2100944B0091E0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34340F302100944B0091E0E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34340F332100944B0091E0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,61 @@
 		34340F282100944B0091E0E2 /* code-challenge */ = {
 			isa = PBXGroup;
 			children = (
-				34340F292100944B0091E0E2 /* AppDelegate.swift */,
-				34340F2B2100944B0091E0E2 /* ViewController.swift */,
+				34340F40210094C90091E0E2 /* Data Sources */,
+				34340F3F210094C20091E0E2 /* API */,
+				34340F3E210094A20091E0E2 /* Models */,
+				34340F3C210094870091E0E2 /* Views */,
+				34340F3D210094930091E0E2 /* Controllers */,
+				34340F3B2100947E0091E0E2 /* Delegates */,
 				34340F2D2100944B0091E0E2 /* Main.storyboard */,
 				34340F302100944B0091E0E2 /* Assets.xcassets */,
 				34340F322100944B0091E0E2 /* LaunchScreen.storyboard */,
 				34340F352100944B0091E0E2 /* Info.plist */,
 			);
 			path = "code-challenge";
+			sourceTree = "<group>";
+		};
+		34340F3B2100947E0091E0E2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				34340F292100944B0091E0E2 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		34340F3C210094870091E0E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34340F3D210094930091E0E2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		34340F3E210094A20091E0E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34340F3F210094C20091E0E2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		34340F40210094C90091E0E2 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +181,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34340F2C2100944B0091E0E2 /* ViewController.swift in Sources */,
 				34340F2A2100944B0091E0E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
