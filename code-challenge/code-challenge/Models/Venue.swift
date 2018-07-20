@@ -9,11 +9,13 @@
 import Foundation
 import ObjectMapper
 
-class Venue: Mappable {
 
+class Venue: Mappable{
     var id: String!
     var name: String!
-
+    var address: String!
+    var latitude: Double!
+    var longtitude: Double!
 
     required init?(map: Map) {
 
@@ -22,7 +24,10 @@ class Venue: Mappable {
     func mapping(map: Map) {
         id <- map["id"]
         name <- map["name"]
-
+        address <- map["location.address"]
+        latitude <- map["location.lat"]
+        longtitude <- map["location.lng"]
     }
+
 }
 

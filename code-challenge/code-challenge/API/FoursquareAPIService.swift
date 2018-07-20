@@ -10,21 +10,24 @@ import Moya
 
 enum FourSquareAPIService {
     case search(city: String)
+    case detail(venueID: String)
 }
 
 extension FourSquareAPIService: TargetType {
-    var baseURL: URL { return URL(string: "https://api.foursquare.com/v2/venues")! }
+    var baseURL: URL { return URL(string: "https://api.foursquare.com/v2")! }
 
     var path: String {
         switch self {
         case .search:
-            return "search"
+            return "/venues/search"
+        case .detail(let venueID):
+            return "/venues/\(venueID)"
         }
     }
 
     var method: Method {
         switch self {
-        case .search:
+        case .search, .detail:
             return .get
         }
     }
@@ -42,10 +45,17 @@ extension FourSquareAPIService: TargetType {
 
         case .search(let city):
             return [
-                "client_id": "C0RPQHVQIANMTPWBWDYNJFHO1SYEQDZ55H2IYSINQOCUSIRQ",
-                "client_secret": "GAPU3A1L1IROOOW2E4VVSYDMJZZWARB1MDLX3D5QKA0EGRLO",
+                "client_id": "KOUQBQZK4JTV1M3ZWKYUG33JKFPTLPZC001WPILQQVAXKJHJ",
+                "client_secret": "BZFPVI3JZGW1RZYWMN55LTUOI3AGYWAR2VMIWPDGWBIQO2JC",
                 "near": city,
                 "query": "coffee",
+                "v": "20180719"
+            ]
+
+        case .detail(let venueID):
+            return [
+                "client_id": "KOUQBQZK4JTV1M3ZWKYUG33JKFPTLPZC001WPILQQVAXKJHJ",
+                "client_secret": "BZFPVI3JZGW1RZYWMN55LTUOI3AGYWAR2VMIWPDGWBIQO2JC",
                 "v": "20180719"
             ]
         }

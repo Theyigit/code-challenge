@@ -6,12 +6,14 @@ PODS:
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
   - ObjectMapper (3.3.0)
+  - RappleProgressHUD (2.4.1)
   - Result (3.2.4)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
   - Moya (~> 11.0)
   - ObjectMapper (~> 3.3)
+  - RappleProgressHUD
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -19,6 +21,7 @@ SPEC REPOS:
     - Alamofire
     - Moya
     - ObjectMapper
+    - RappleProgressHUD
     - Result
     - SwiftyJSON
 
@@ -26,9 +29,10 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  RappleProgressHUD: 1d97178abc04ea9e89e4df74227064ded389ce24
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 5faee0bc812595441fd49275a12e1b9dd4485e03
+PODFILE CHECKSUM: 2020f8522ed023c0795f1a6f7f4612596d2a1f5e
 
 COCOAPODS: 1.5.0

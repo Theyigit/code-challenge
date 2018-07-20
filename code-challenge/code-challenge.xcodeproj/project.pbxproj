@@ -14,6 +14,10 @@
 		34340F422100982C0091E0E2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34340F412100982C0091E0E2 /* SearchViewController.swift */; };
 		34340F44210099130091E0E2 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34340F43210099130091E0E2 /* SearchButton.swift */; };
 		34340F4621009B550091E0E2 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34340F4521009B550091E0E2 /* SearchTextField.swift */; };
+		343D62862101E31700180BC2 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D62852101E31700180BC2 /* PopupViewController.swift */; };
+		3447C9C02100ED2800FC909B /* LoadingSpinnerObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447C9BF2100ED2800FC909B /* LoadingSpinnerObservable.swift */; };
+		3447C9C22101027100FC909B /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447C9C12101027100FC909B /* VenueCell.swift */; };
+		3447C9C4210103F600FC909B /* VenuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447C9C3210103F600FC909B /* VenuesViewController.swift */; };
 		345564D12100B073009E518E /* FoursquareAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345564D02100B073009E518E /* FoursquareAPIService.swift */; };
 		346512DC2100B3210068DC0D /* FoursquareNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346512DB2100B3210068DC0D /* FoursquareNetwork.swift */; };
 		346512DE2100DEC60068DC0D /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346512DD2100DEC60068DC0D /* Venue.swift */; };
@@ -31,6 +35,10 @@
 		34340F412100982C0091E0E2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		34340F43210099130091E0E2 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		34340F4521009B550091E0E2 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		343D62852101E31700180BC2 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		3447C9BF2100ED2800FC909B /* LoadingSpinnerObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerObservable.swift; sourceTree = "<group>"; };
+		3447C9C12101027100FC909B /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		3447C9C3210103F600FC909B /* VenuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesViewController.swift; sourceTree = "<group>"; };
 		345564D02100B073009E518E /* FoursquareAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIService.swift; sourceTree = "<group>"; };
 		346512DB2100B3210068DC0D /* FoursquareNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareNetwork.swift; sourceTree = "<group>"; };
 		346512DD2100DEC60068DC0D /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 		34340F282100944B0091E0E2 /* code-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				3447C9BE2100ED0300FC909B /* Protocols */,
 				34340F40210094C90091E0E2 /* Data Sources */,
 				34340F3F210094C20091E0E2 /* API */,
 				34340F3E210094A20091E0E2 /* Models */,
@@ -100,6 +109,7 @@
 			children = (
 				34340F43210099130091E0E2 /* SearchButton.swift */,
 				34340F4521009B550091E0E2 /* SearchTextField.swift */,
+				3447C9C12101027100FC909B /* VenueCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				34340F412100982C0091E0E2 /* SearchViewController.swift */,
+				3447C9C3210103F600FC909B /* VenuesViewController.swift */,
+				343D62852101E31700180BC2 /* PopupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -135,6 +147,14 @@
 				346512DF2100E0300068DC0D /* VenueDataSource.swift */,
 			);
 			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		3447C9BE2100ED0300FC909B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3447C9BF2100ED2800FC909B /* LoadingSpinnerObservable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		3B6E034E043D805E31126177 /* Pods */ = {
@@ -252,6 +272,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RappleProgressHUD/RappleProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -260,6 +281,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RappleProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -277,12 +299,16 @@
 			files = (
 				345564D12100B073009E518E /* FoursquareAPIService.swift in Sources */,
 				346512DC2100B3210068DC0D /* FoursquareNetwork.swift in Sources */,
+				3447C9C4210103F600FC909B /* VenuesViewController.swift in Sources */,
 				34340F422100982C0091E0E2 /* SearchViewController.swift in Sources */,
 				346512DE2100DEC60068DC0D /* Venue.swift in Sources */,
 				34340F2A2100944B0091E0E2 /* AppDelegate.swift in Sources */,
 				34340F44210099130091E0E2 /* SearchButton.swift in Sources */,
 				346512E02100E0300068DC0D /* VenueDataSource.swift in Sources */,
+				3447C9C02100ED2800FC909B /* LoadingSpinnerObservable.swift in Sources */,
 				34340F4621009B550091E0E2 /* SearchTextField.swift in Sources */,
+				3447C9C22101027100FC909B /* VenueCell.swift in Sources */,
+				343D62862101E31700180BC2 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
